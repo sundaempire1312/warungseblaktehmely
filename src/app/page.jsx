@@ -133,29 +133,20 @@ const Page = () => {
                   currentItems.map((item, index) => (
                     <div
                       key={item.id_produk}
-                      className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 flex flex-col"
+                      className="bg-white border border-amber-200 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 flex flex-col"
                     >
-                      <div className="h-48 bg-amber-100 flex items-center justify-center">
+                      <div className="h-22 bg-amber-100 flex items-center justify-center">
                         <div className="text-amber-600">
                           {menuIcons[index % menuIcons.length]}
                         </div>
                       </div>
                       <div className="p-6 flex-grow">
-                        <div className="flex justify-between items-start mb-2">
+                        <div className="flex flex-col gap-2 justify-start items-start mb-2">
                           <h3 className="text-xl font-bold text-gray-800">{item.nama_produk}</h3>
                           <span className="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm font-semibold">
                             Rp {item.harga.toLocaleString()}
                           </span>
                         </div>
-                        <div className="flex items-center mb-2">
-                          <span className="mr-2">Pedas:</span>
-                          <div className="flex">
-                            {spicyLevelIcons(item.level_pedas || 3)}
-                          </div>
-                        </div>
-                        <p className="text-gray-600 mb-4 line-clamp-2">
-                          {item.deskripsi || "Seblak pedas dengan berbagai topping lezat"}
-                        </p>
                       </div>
                     </div>
                   ))
@@ -249,7 +240,7 @@ const Page = () => {
           <h2 className="text-3xl font-bold mb-6">Siap Menikmati Seblak Pedas Kami?</h2>
           <p className="text-xl mb-8">Pesan sekarang dan dapatkan promo khusus untuk pembelian pertama!</p>
 
-          <div className="flex flex-col items-center gap-6 mt-8">
+          <div className="flex flex-col md:flex-row items-center gap-6 mt-8">
             {/* Nomor HP */}
             <div className="flex items-center gap-3 bg-white/10 p-4 rounded-lg backdrop-blur-sm w-full max-w-md">
               <div className="bg-amber-100 p-3 rounded-full">
@@ -273,7 +264,7 @@ const Page = () => {
               </div>
               <div className="text-left">
                 <p className="text-sm text-amber-200">Kunjungi kami di:</p>
-                <p className="text-xl font-semibold">Jalan Seblak No. 123, Kota Pedas</p>
+                <p className="text-xl font-semibold">Jl. Wado - Kirisik , Dusun Sukahurip, RT.001/RW.006, Pawenang, Kec. Jatinunggal</p>
               </div>
             </div>
           </div>

@@ -47,7 +47,7 @@ export default function PopupTrans({ data, isOpen, onClose }) {
                     {/* Header Struk */}
                     <div className="text-center mb-4">
                         <h1 className="text-2xl font-bold">WARUNG SEBLAK TEH MELY</h1>
-                        <p className="text-xs text-gray-500">Jl. Contoh No. 123, Kota Anda</p>
+                        <p className="text-xs text-gray-500">Jl. Wado - Kirisik , Dusun Sukahurip, RT.001/RW.006, Pawenang, Kec. Jatinunggal</p>
                         <p className="text-xs text-gray-500">Telp: 0812-3456-7890</p>
                     </div>
 
